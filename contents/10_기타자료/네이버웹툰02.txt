@@ -1,0 +1,12 @@
+>>> import urllib
+>>> import BeautifulSoup
+>>> data = urllib.urlopen(
+'http://comic.naver.com/webtoon/list.nhn?titleId=20853&weekday=fri')
+>>> soup = BeautifulSoup.BeautifulSoup(data)
+>>> cartoons = soup.findAll('td',attrs={'class':'title'})
+>>> title = cartoons[0].find('a').text
+>>> link = cartoons[0].find('a')['href']
+>>> print title
+887. 새 스마트폰
+>>> print link
+/webtoon/detail.nhn?titleId=20853&no=891&weekday=fri

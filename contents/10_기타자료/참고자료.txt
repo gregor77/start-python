@@ -1,0 +1,18 @@
+* 참고자료
+
+파이썬 재단 
+https://www.python.org/
+
+뷰티플스프
+http://www.crummy.com/software/BeautifulSoup/
+
+참고도서
+파이썬 완벽 가이드 
+파이썬 라이브러리를 활용한 데이터 분석
+해커의 언어, 치명적 파이썬 
+
+Django Framework 다운로드 
+https://www.djangoproject.com/
+
+아나콘다 다운로드 
+http://continuum.io/downloads

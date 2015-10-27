@@ -1,0 +1,13 @@
+>>> data = urllib.urlopen('http://comic.naver.com/webtoon/list.nhn?titleId=20853&weekday=fri')
+>>> soup = BeautifulSoup.BeautifulSoup(data)
+>>> cartoons = soup.findAll('td', attrs={'class':'title'})
+>>> title = cartoons[0].find('a').text
+>>> link = cartoons[0].find('a')['href']
+>>> print title
+865. °³ ¹«¼­¿î ¹ã
+>>> print link
+/webtoon/detail.nhn?titleId=20853&no=869&weekday=fri
+
+
+for i in cartoons:
+	print i
